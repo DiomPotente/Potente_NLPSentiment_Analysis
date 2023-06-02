@@ -28,10 +28,10 @@ def app():
     stopwords_list.remove('not')
     tokenizer = ToktokTokenizer()
 
-    st.title("Sentiment Analysis")      
-    st.subheader("Ellan V. Flores")
+    st.title("NLP Sentiment Analysis")      
+    st.subheader("Diomedes L. Potente BSCS 3A")
     
-    st.subheader('Do you think technology is making people more socially isolated and disconnected from their communities?')
+    st.subheader('How Do People Adopt and Use Technology?')
      
 
      #The following function definitions show the codes need to perform each task
