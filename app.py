@@ -31,9 +31,10 @@ def app():
     st.title("NLP Sentiment Analysis")      
     st.subheader("Diomedes L. Potente BSCS 3A")
     
-    st.subheader('How Do People Adopt and Use Technology?')
-    
-    #The following function definitions show the codes need to perform each task
+    st.subheader('Do you think technology is making people more socially isolated and disconnected from their communities?')
+     
+
+     #The following function definitions show the codes need to perform each task
     def custom_remove_stopwords(text, is_lower_case=False):
         tokens = tokenizer.tokenize(text)
         tokens = [token.strip() for token in tokens]
@@ -103,7 +104,7 @@ def app():
         label_1=df[df['label']==1].sample(n=15)
 
         train = pd.concat([label_1, label_0])
-        
+
         #remember this very useful function to randomly rearrange the dataset
         train = shuffle(train)
 
@@ -112,7 +113,7 @@ def app():
         human reviewers and may not be the real sentiment.  We will use AI \
         to generate a new setiment value based on the analysis of the actual \
         text of the review.')
-        
+
         st.write('We display the first 50 rows of the training dataset')
         st.write(train.head(50))
 
